@@ -1,7 +1,12 @@
-const mongoose = require('mongoose');
+const mongoose = require('../database/connection');
+const Schema = mongoose.Schema;
 
 const JobSchema = new Schema({
   title:{
+    type: 'String',
+    required: true,
+  },
+  description:{
     type: 'String',
     required: true,
   },
@@ -16,7 +21,7 @@ const JobSchema = new Schema({
     required: true,
   },
   new:{
-    type: 'Integer',
+    type: Number,
   },
   createdAt:{
     type: 'Date',
