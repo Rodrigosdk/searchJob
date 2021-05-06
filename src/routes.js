@@ -4,6 +4,6 @@ const CreatedController = require('./controllers/CreatedController');
 const routes = express.Router();
 
 routes.get("/", DashboardController.index);
-routes.post("/job", CreatedController.created);
+routes.post("/add", CreatedController.created);
 
 module.exports = routes;
