@@ -1,8 +1,8 @@
 import Job from "../../assets/job.svg";
-import "../header/styles.css";
+import "../login/styles.css";
 import "../../styles/global.css";
 
-const Header = () => {
+const Login = () => {
   return (
     <div className="main">
       <div className="container">
@@ -12,7 +12,7 @@ const Header = () => {
             <h1>Search Jobs</h1>
             <p>
             O emprego que você procura está no SearchJobs!<br/>
-            Acredite, é verdade! Tornar uma vaga boa para os talentos,<br/> pode fazer com que eles se inscrevam mesmo sem<br/>estarempensando em mudar de emprego.
+            Acredite, é verdade! Tornar uma vaga boa para os talentos, pode fazer com que eles se inscrevam mesmo sem estarem pensando em mudar de emprego.
             </p>
           </div>
           <div className="itemsForm">
@@ -23,7 +23,7 @@ const Header = () => {
               <input type="email" placeholder="E-mail"/>
               <input type="password" placeholder="Senha"/>
               <button className="enter">Entrar</button>
-              <button className="cadastra">Ainda não tem conta? Cadastre-se.</button>
+              <button className="cadastra">Ainda não tem conta? Cadastre-se!</button>   
             </form>
           </div>
         </div>
@@ -32,4 +32,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Login;

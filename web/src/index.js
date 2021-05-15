@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './styles/global.css';
-import Header from './pages/header';
+import Login from './components/login';
+import Register from './components/register';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
+    
+    <Register />
   </React.StrictMode>,
   document.getElementById('root')
 );
