@@ -1,0 +1,60 @@
+.mainCadastro{
+  background-color: var(--primary);
+}
+
+.mainCadastro .itemCadastro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height:100%;
+}
+
+.mainCadastro .itemCadastro form h1 {
+  color: #FFF;
+  padding: 12px;
+}
+
+.mainCadastro .itemCadastro form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCadastro .itemCadastro form{
+  width: 400px;
+  height: 400px;
+  padding: 45px;
+  background-color: #18191d;
+  border-radius: 5px;
+}
+
+.mainCadastro .itemCadastro form input{
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 5px;
+  height: 40px;
+  margin: 15px 0;
+  border: none;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.mainCadastro .itemCadastro .buttonCadastro{
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+@media (max-width: 575px){
+  .mainCadastro .itemCadastro form{
+    max-width: 100%;
+  }
+}
