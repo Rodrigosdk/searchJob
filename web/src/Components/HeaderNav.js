@@ -8,7 +8,7 @@ function HeaderNav() {
   return (
     <header className="header">
       <nav className="nav">
-        <img src={LogoSearch} alt="Search Jobs"/>
+        <Link to="/"><img src={LogoSearch} alt="Search Jobs" /></Link>
         <Link to="/login" className="button">Entrar</Link>
       </nav>
     </header>

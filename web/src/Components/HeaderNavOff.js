@@ -8,7 +8,7 @@ function HeaderNavOff() {
     <div>
       <header className="header">
         <nav className="nav">
-          <img src={LogoSearch} alt="Search Jobs" />
+          <Link to="/"><img src={LogoSearch} alt="Search Jobs" /></Link>
         </nav>
       </header>
     </div>

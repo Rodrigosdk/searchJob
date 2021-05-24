@@ -20,14 +20,14 @@ export default function MainLogin() {
             </p>
           </div>
           <div className="itemsForm">
-            <h1>Login do cliete</h1>
+            <h1>Login do cliente</h1>
             <p>Digite seus dados para entrar e acessar.</p>
 
             <form action="">
               <input type="email" placeholder="E-mail" />
               <input type="password" placeholder="Senha" />
               <Link className="enter">Entrar</Link>
-              <Link className="cadastra">
+              <Link to="/register" className="cadastra">
                 Ainda não tem conta? Cadastre-se!
               </Link>
             </form>

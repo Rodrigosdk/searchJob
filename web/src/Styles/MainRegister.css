@@ -1,0 +1,71 @@
+.main{
+  height: 92vh;
+}
+
+.itemCadastro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  flex-direction: column;
+  flex: 1;
+}
+
+.itemCadastro form h1 {
+  color: #000;
+  padding: 12px;
+}
+
+.itemCadastro form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemCadastro form{
+  width: 400px;
+  height: 400px;
+  padding: 45px;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 
+  rgb(153 153 153 / 20%) 1px 3px 2px -2px, 
+  rgb(153 153 153 / 14%) 1px 4px 4px 1px, 
+  rgb(153 153 153 / 12%) 1px 2px 6px 1px;
+}
+
+.itemCadastro form input{
+  background-color: var(--white);
+  color: var(--white);
+  border-radius: 5px;
+  height: 40px;
+  margin: 10px 0;
+  border: 1px solid #CCC;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.itemCadastro .buttonCadastro{
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 14px;
+  transition: background-color 250ms;
+}
+
+.itemCadastro .buttonCadastro:hover{
+  background-color: var(--hover-button);
+}
+
+.contaExist{
+  font-size: 16px;
+  color: var(--black);
+  margin-top: 18px;
+}

@@ -7,7 +7,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background: #FFF;
+  background: var(--white);
 }
 
 .nav{
@@ -30,9 +30,9 @@
 .header .button{
   font-size: 14px;
   text-decoration: none;
-  border: 2px solid #000;
+  border: 2px solid var(--black);
   border-radius: 5px;
-  color: #000;
+  color: var(--black);
   font-size: 16px;
   width: 120px;
   height: 40px;
@@ -43,6 +43,6 @@
 }
 
 .header .button:hover{
-  border: 2px solid var(--hoverButton);
-  color: var(--hoverButton);
+  border: 2px solid var(--hover-button);
+  color: var(--hover-button);
 }
