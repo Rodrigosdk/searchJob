@@ -14,8 +14,8 @@ function MainSection() {
           <div className="container">
             <div className="search">
               <div className="titles">
-                <h2>Encontre a vaga ideal</h2>
-                <h3>Procure uma oportunidade de emprego</h3>
+                <h2>Procure uma oportunidade de emprego</h2>
+                <h3>Somos o site com mais vagas de tecnologia no mercado, direcionadas a homeoffice.</h3>
               </div>
               <div className="search_items">
                 <form action="">
