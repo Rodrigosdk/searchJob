@@ -1,0 +1,48 @@
+.header{
+  box-shadow: 
+    rgb(153 153 153 / 20%) 0px 3px 1px -2px, 
+    rgb(153 153 153 / 14%) 0px 2px 2px 0px, 
+    rgb(153 153 153 / 12%) 0px 1px 5px 0px;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #FFF;
+}
+
+.nav{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+.header img{
+  width: 230px;
+  height: 45px;
+}
+
+.header nav{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.header .button{
+  font-size: 14px;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms;
+}
+
+.header .button:hover{
+  border: 2px solid var(--hoverButton);
+  color: var(--hoverButton);
+}

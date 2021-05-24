@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './styles/global.css';
-import Login from './components/login';
-import Register from './components/register';
-import Main from './pages/main';
+import './Styles/global.css';
+import Router from './Router/Router';
 
 ReactDOM.render(
   <React.StrictMode>
-  
-    <Main/>
+    <Router/>
   </React.StrictMode>,
   document.getElementById('root')
 );

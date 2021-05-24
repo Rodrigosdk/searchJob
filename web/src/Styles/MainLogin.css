@@ -1,0 +1,102 @@
+.main{
+  height: 92vh;
+}
+
+.main .items{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
+  flex: 1;
+}
+
+.main .itemsForm form input{
+  background-color: var(--white);
+  border-radius: 5px;
+  height: 40px;
+  margin: 15px 0;
+  padding-left: 10px;
+  border: 1px solid #CCC;
+}
+
+.main .itemsForm{
+  padding: 45px;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 
+  rgb(153 153 153 / 20%) 1px 3px 2px -2px, 
+  rgb(153 153 153 / 14%) 1px 4px 4px 1px, 
+  rgb(153 153 153 / 12%) 1px 2px 6px 1px;
+}
+
+.main .itemsForm h1{
+  text-align: center;
+}
+
+.main .itemsForm h1, p{
+  color: #000;
+}
+
+.main .itemsForm p{
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+}
+
+.main .itemsForm h1{
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.main .itemsForm p{
+  margin-bottom: 25px;
+}
+
+.main .itemsForm input, button{
+  display: flex;
+  width: 100%;
+  border: 0;
+}
+
+.main .itemsForm .enter{
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  font-size: 14px;
+  transition: background-color 250ms;
+  text-decoration: none;
+}
+
+.main .itemsForm .enter:hover{
+  background-color: var(--hoverButton);
+}
+
+.main .itemsForm .cadastra{
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d415f;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.main .itemsText h1{
+  color: var(--secondary);
+  font-size: 40px;
+}
+
+.main .itemsText p{
+  margin-top: 15px;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  width: 450px;
+  text-align: justify;
+}
