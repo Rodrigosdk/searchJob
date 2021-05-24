@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 function MainRegister() {
   return (
     <main className="main">
-      <div className="container">
+      <div className="containerRegister">
         <div className="itemCadastro">
           <form action="">
             <h1>Cadastre-se</h1>

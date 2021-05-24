@@ -1,0 +1,139 @@
+.banner{
+  background-image: url(../Assets/banner3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+.search .search_items{
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  border-radius: 5px;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 
+  rgb(153 153 153 / 20%) 1px 3px 2px -2px, 
+  rgb(153 153 153 / 14%) 1px 4px 4px 1px, 
+  rgb(153 153 153 / 12%) 1px 2px 6px 1px;
+}
+
+.search form{
+  width: 600px;
+}
+
+.search form input{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  padding-left: 10px;
+}
+
+.search .search_items button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bolder;
+  border-radius: 5px;
+  margin-left: 15px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.search .search_items button span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.search .search_items button:hover{
+  background-color: var(--hover-button);
+}
+
+.main .titles{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.main .titles h2{
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.main .titles h3{
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.benefits{
+  background-color: #FAFAFA;
+}
+
+.benefits h1{
+  margin: 50px 0;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+
+.item{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  
+}
+
+.itemsSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important;
+  text-align: center;
+  background: var(--white);
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 
+  rgb(153 153 153 / 20%) 1px 3px 2px -2px, 
+  rgb(153 153 153 / 14%) 1px 4px 4px 1px, 
+  rgb(153 153 153 / 12%) 1px 2px 6px 1px;
+}
+
+.itemsSection img{
+  width: 200px;
+  height: 150px;
+}
+
+.itemsSection h1{
+  margin: 15px 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.itemitemsSections p{
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+}
