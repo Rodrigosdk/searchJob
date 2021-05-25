@@ -7,6 +7,12 @@ module.exports = {
 
     try {
 
+      const userAlreadyExists = await User.findOne({
+        email
+      });
+
+      if(userAlreadyExists) return res.status(400).send({message: 'User already exists. Try another one'});
+
       const createdUser = await User.create({
         name, email, password
       });
