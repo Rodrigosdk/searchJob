@@ -17,5 +17,19 @@ module.exports = {
       return res.status(400).send(err)
     }
 
+  },
+
+  async UserAll(req, res) {
+
+    try {
+
+      const userAll = await User.find();
+
+      return res.status(200).send({message: 'All users', userAll});
+      
+    } catch (err) {
+      return res.status(400).send(err)
+    }
+
   }
 }
