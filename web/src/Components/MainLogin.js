@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {Link} from 'react-router-dom';
 import "../Styles/MainLogin.css";
 
+import InputStandart from "./InputStandart";
+
 export default function MainLogin() {
+
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+
   return (
     <main className="main">
       <div className="container">
@@ -24,8 +32,19 @@ export default function MainLogin() {
             <p>Digite seus dados para entrar e acessar.</p>
 
             <form action="">
-              <input type="email" placeholder="E-mail" />
-              <input type="password" placeholder="Senha" />
+              <InputStandart
+                type="text" 
+                title="Usuário"
+                state={username}
+                setState={e=>setUsername(e.target.value)} 
+              />
+              <InputStandart
+                type="password" 
+                title="Senha"
+                state={password}
+                setState={e=>setPassword(e.target.value)} 
+              />
+              
               <Link className="enter">Entrar</Link>
               <Link to="/register" className="cadastra">
                 Ainda não tem conta? Cadastre-se!

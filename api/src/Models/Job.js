@@ -24,7 +24,7 @@ const Schema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  new:{
+  recent:{
     type: Number,
   },
   createdAt:{

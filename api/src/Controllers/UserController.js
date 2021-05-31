@@ -17,10 +17,10 @@ module.exports = {
         name, email, password
       });
 
-      return res.status(200).send({message: 'User created successfully', createdUser});
+      return res.status(200).send({message: 'User created successfully', data: createdUser});
       
     } catch (err) {
-      return res.status(400).send(err)
+      return console.log(err);
     }
 
   },
