@@ -1,20 +1,25 @@
 const express = require('express');
 const router = express.Router();
 
-const UserController = require('../Controllers/UserController');
-const LoginController = require('../Controllers/LoginController');
-const JobController = require('../Controllers/JobController');
+const AuthController = require('../controllers/AuthController');
+const UserController = require('../controllers/UserController');
+const JobsController = require('../controllers/JobsController');
 
-router.post("/users", UserController.CreateUser);
-router.get("/users", UserController.UserAll);
+router.get('/states', UserController.getStates);
 
-router.post("/login", LoginController.Login);
+router.post('/user/signin', AuthController.signin);
+router.post('/user/signup', AuthController.signup);
 
-router.post("/jobs", JobController.CreatedJob);
-router.get("/jobs", JobController.JobAll)
+router.get('/user/me', UserController.info);
+router.put('/user/me', UserController.editAction);
 
-router.get("/", (req, res) => {
-  return res.send("Hello")
-});
+router.post('/ad/job', JobsController.addAction);
+router.get('/ad/list', JobsController.getList);
+router.get('/ad/job', JobsController.getJob);
+router.put('/ad/:id', JobsController.editAction);
+
+router.get("/ping", (req, res) => {
+  return res.json({pong: true});
+}); 
 
 module.exports = router;

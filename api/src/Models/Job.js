@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 
-const Schema = new mongoose.Schema({
-  user:{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+const modelSchema = new mongoose.Schema({
+  idUser:{
+    type: String,
     required: true
   },
   title:{
@@ -15,22 +15,38 @@ const Schema = new mongoose.Schema({
     required: true,
   },
   salary:{
+    type: Number,
+  },
+  salaryNegociable:{
+    type: Boolean,
+  },
+  state:{
     type: String,
+    required: true,
   },
   company:{
     type: String,
+    required: true,
   },
   email:{
     type: String,
     required: true,
   },
-  recent:{
+  dataCreated:{
+    type: Date,
+  },
+  views:{
     type: Number,
   },
-  createdAt:{
-    type: Date,
-    default: Date.now,
+  status:{
+    type: String,
   }
 });
 
-module.exports = mongoose.model('Job', Schema);
+const modelName = 'Job'
+
+if(mongoose.connection && mongoose.connection.models[modelName]){
+  module.exports = mongoose.connection.models[modelName];
+} else {
+  module.exports = mongoose.model(modelName, modelSchema);
+}
